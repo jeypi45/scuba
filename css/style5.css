@@ -1,0 +1,551 @@
+/* Dive Site Page Styles */
+.dive-site-container {
+  padding: 60px 0;
+  background-color: #f8fafb;
+}
+
+/* Header styles */
+.dive-site-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dive-site-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3b5998;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dive-site-quick-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-badge {
+  background-color: #e7f2ff;
+  border-radius: 50px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #3b5998;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-badge i {
+  color: #4a76a8;
+  font-size: 16px;
+}
+
+/* Gallery styles */
+.dive-site-gallery {
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-main {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-main:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background-color: #fff;
+}
+
+.gallery-thumb {
+  height: 80px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.gallery-thumb:hover img {
+  transform: scale(1.1);
+}
+
+/* Content card styles */
+.content-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: 1px solid #eaeef1;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eaeef1;
+}
+
+.card-header h2,
+.card-header h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #3b5998;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-header i {
+  margin-right: 10px;
+  color: #4a76a8;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-body p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Marine life list */
+.marine-life-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.marine-life-list li {
+  padding: 8px 10px;
+  background-color: #f0f8ff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.marine-life-list li i {
+  color: #4a76a8;
+}
+
+/* Dive note */
+.dive-note {
+  background-color: #fff6e6;
+  border-left: 4px solid #ffab40;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.dive-note i {
+  color: #ffab40;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+/* Map styles */
+.dive-map {
+  height: 300px;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+.map-card .card-body {
+  padding: 0;
+}
+
+/* Rating styles */
+.rating-card .card-body {
+  padding: 20px;
+}
+
+#average-rating {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avg-rating-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3b5998;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.out-of {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.rating-stars-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars-container {
+  color: #ffab40;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.rating-count {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.your-rating {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.your-rating p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 28px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #ffab40;
+}
+
+#rating-message {
+  color: #28a745;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+.login-to-rate {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Booking card */
+.booking-card .card-body {
+  text-align: center;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Similar dive sites */
+.similar-sites {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eaeef1;
+}
+
+.similar-sites h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b5998;
+}
+
+.site-card {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.site-card:hover {
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.site-thumb {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.site-depth {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.site-info {
+  padding: 15px;
+  background-color: white;
+}
+
+.site-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.site-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars {
+  color: #ffab40;
+  letter-spacing: 2px;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+  .marine-life-list {
+    grid-template-columns: 1fr;
+  }
+
+  .dive-site-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-main {
+    height: 300px;
+  }
+
+  .gallery-thumbs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-thumb {
+    height: 100px;
+  }
+
+  .info-badge {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+
+  .dive-site-title {
+    font-size: 2rem;
+  }
+}
+
+/* Enhanced Map Styles (replacing gallery) */
+.dive-site-map {
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 400px;
+}
+
+.main-dive-map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.map-card {
+  display: none;
+}
+
+/* Ocean Waves Animation */
+.ocean-waves {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 120px;
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave1 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%235988c0' opacity='.25'%3E%3C/path%3E%3C/svg%3E");
+  z-index: 3;
+  animation: wave-animation 10s linear infinite;
+}
+
+.wave2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%234a76a8' opacity='.5'%3E%3C/path%3E%3C/svg%3E");
+  z-index: 2;
+  animation: wave-animation 8s linear infinite;
+}
+
+.wave3 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%233b5998'%3E%3C/path%3E%3C/svg%3E");
+  z-index: 1;
+  animation: wave-animation 6s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+
+  50% {
+    transform: translateX(-25%) translateZ(0);
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0);
+  }
+}
+
+/* Inverted waves (for top of sections) */
+.ocean-waves.inverted {
+  transform: rotate(180deg);
+  margin-top: -2px;
+  /* Changed from margin-bottom */
+  z-index: 1;
+}
+
+/* Variations for different sections */
+.ocean-waves.blue-theme .wave3 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' fill='%234a76a8'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.back-navigation {
+  margin-bottom: 20px;
+}
+
+.back-navigation a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.back-navigation a i {
+  margin-right: 5px;
+}
+
+/* Add to your existing style section */
+.dive-search-container {
+  padding: 30px 0;
+  background-color: #f8fafb;
+  margin-bottom: 20px;
+}
+
+.dive-filter-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.dive-filter-card h3 {
+  color: #3b5998;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dive-filter-card .form-group {
+  margin-bottom: 15px;
+}
+
+.dive-filter-card label {
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dive-filter-card .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* Hide class for filtered items */
+.dive-site-hidden {
+  display: none;
+}
